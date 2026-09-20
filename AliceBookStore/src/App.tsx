@@ -17,12 +17,13 @@ function App() {
     </div>
     </header>
 
-    <main className='bg-[#F3F3F1] m-4 border-2'>
-        <p> test</p>
-        <BookCard/>
+    <main className='m-4 border-2'>
+       <BookCard/>
+
+       {/* Aqui ficará um for book : /items cria uma div pro book */}
     </main>
 
-    <footer className='bg-[#F3F3F1] mb-0 border-2'>
+    <footer className='bg-[#2ab620] mb-0 border-2'>
         <p> test</p>
     </footer>
     </>
