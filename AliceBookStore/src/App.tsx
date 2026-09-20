@@ -1,4 +1,5 @@
 import './App.css'
+import BookCard from './hooks/BookCard'
 
 function App() {
 
@@ -16,11 +17,12 @@ function App() {
     </div>
     </header>
 
-    <main className='bg-[#EFEAD9] m-4 border-2'>
+    <main className='bg-[#F3F3F1] m-4 border-2'>
         <p> test</p>
+        <BookCard/>
     </main>
 
-    <footer className='bg-[#EFEAD9] mb-0 border-2'>
+    <footer className='bg-[#F3F3F1] mb-0 border-2'>
         <p> test</p>
     </footer>
     </>
