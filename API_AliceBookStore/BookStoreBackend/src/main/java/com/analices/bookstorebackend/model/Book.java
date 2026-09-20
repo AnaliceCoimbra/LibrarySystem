@@ -7,8 +7,8 @@ public class Book extends LibraryItem{
         super();
     }
 
-    public Book(int id, String title, String coverUrl, ReadingStatus status, String author) {
-        super(id, title, coverUrl, status); //To use the parent class attributes
+    public Book(int id, String title, String coverUrl, ReadingStatus status, String author, String genre, int pages) {
+        super(id, title, coverUrl, status, genre, pages); //To use the parent class attributes
         this.author = author;
     }
 

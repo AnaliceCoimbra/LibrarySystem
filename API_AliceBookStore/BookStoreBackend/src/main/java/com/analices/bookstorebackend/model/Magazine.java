@@ -7,8 +7,8 @@ public class Magazine extends LibraryItem {
         super();
     }
 
-    public Magazine(int id, String title, String coverUrl, ReadingStatus status, int edition) {
-        super(id, title, coverUrl, status); //To use the parent attributes
+    public Magazine(int id, String title, String coverUrl, ReadingStatus status, int edition, String genre, int pages) {
+        super(id, title, coverUrl, status, genre, pages); //To use the parent attributes
         this.edition = edition;
     }
 
