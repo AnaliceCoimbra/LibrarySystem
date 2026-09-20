@@ -6,8 +6,8 @@ export interface LibraryItem {
   id: number;
   title: string;
   coverUrl?: string;
-  status: ReadingStatus;
-  type: 'BOOK' | 'MAGAZINE';
+  status?: ReadingStatus;
+  type?: 'BOOK' | 'MAGAZINE';
   genre: string;
   pages: number;
   // Book
@@ -16,7 +16,8 @@ export interface LibraryItem {
   edition?: number;
 }
 
-// Resposta do Cache / Métricas (para mostrar que você domina Cache no Java)
+export type FilterType = 'ALL' | 'BOOK' | 'MAGAZINE';
+
 export interface CacheStats {
   hits: number;
   misses: number;
