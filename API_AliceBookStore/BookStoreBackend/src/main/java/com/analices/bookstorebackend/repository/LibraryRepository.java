@@ -11,10 +11,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Repository
 public class LibraryRepository {
-
-    @Repository
-    public class BookRepository {
 
         //Creating a Catalog List to add books and magazines
         private final List<LibraryItem> catalog = new ArrayList<>();
@@ -28,7 +26,7 @@ public class LibraryRepository {
         }
 
         // List all catalog
-        public List<LibraryItem> findAll() {
+        public List<LibraryItem> listAll() {
             return catalog;
         }
 
@@ -56,6 +54,8 @@ public class LibraryRepository {
                 item.setTitle(updatedItem.getTitle());
                 item.setCoverUrl(updatedItem.getCoverUrl());
                 item.setStatus(updatedItem.getStatus());
+                item.setGenre(updatedItem.getGenre());
+                item.setPages(updatedItem.getPages());
 
                 //If the item type is a Book, updates the book attributes (author)
                 if (item instanceof Book book && updatedItem instanceof Book updatedBook) {
@@ -73,4 +73,4 @@ public class LibraryRepository {
             return catalog.removeIf(item -> item.getId() == id);
         }
     }
-}
+
